@@ -1,16 +1,5 @@
 #!/bin/bash
 
-push(){
-  ORIGIN=$(git remote get-url origin)
-  rm -rf .git
-  git init -b main
-  git remote add origin $ORIGIN
-  git config --local include.path ../.gitconfig
-  git add .
-  git commit -m "i am delorean program"
-  git push -f -u origin main
-}
-
 cp_vscode_settings(){
   cp -f ./src/delorean/settings.json ~/.config/Code/User/settings.json
 }
