@@ -27,15 +27,6 @@ install_clj(){
   sudo rm ${FILE}
 }
 
-install_lein(){
-  LEIN_VERSION=2.9.6
-  BIN_DIR=/usr/local/bin/
-  curl -o /tmp/lein https://raw.githubusercontent.com/technomancy/leiningen/${LEIN_VERSION}/bin/lein
-  sudo mv /tmp/lein ${BIN_DIR}
-  chmod a+x ${BIN_DIR}/lein
-  ls ${BIN_DIR}
-}
-
 install_gnome_shell_clock_override(){
   cd ../
   git clone https://github.com/stuartlangridge/gnome-shell-clock-override
