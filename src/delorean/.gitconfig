@@ -3,10 +3,10 @@
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
-    cmd =  --wait --diff $LOCAL $REMOTE
+    cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
-    tool = 
-[mergetool ""]
-    cmd =  --wait $MERGED
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 [core]
-	editor =  --wait
+	editor = code --wait
