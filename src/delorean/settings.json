@@ -7,11 +7,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "extensions.ignoreRecommendations": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "calva.prettyPrintingOptions": {
-      "enabled": false,
-      "printEngine": "pprint",
-      "width": 120
-  },
   "security.workspace.trust.untrustedFiles": "open",
   "files.exclude": {
   "**/.git": false
@@ -20,13 +15,9 @@
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "explorer.autoReveal": false,
-  "calva.fmt.allgnMapItems": true,
-  "calva.fmt.newIndentEngine": true,
-  "calva.autoConnect": false,
   "workbench.sideBar.location": "left",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
-  "calva.evalOnSave": false,
   "workbench.panel.defaultLocation": "bottom",
   "files.autoSave": "off",
   "editor.suggestSelection": "first",
@@ -35,16 +26,8 @@
   "java.errors.incompleteClasspath.severity": "ignore",
   "git.autofetch": false,
   "git.terminalAuthentication": false,
-  "calva.syncReplNamespaceToCurrentFile": true,
-  "calva.openBrowserWhenFigwheelStarted": false,
-  "calva.highlight.commentFormStyle": {
-  "textDecoration": "none; opacity: 1"
-  },
   "explorer.openEditors.visible": 0,
-  "calva.highlight.enableBracketColors": true,
-  "calva.sendAsyncOutputTo": "REPL Window",
   "explorer.compactFolders": true,
-  "calva.showDocstringInParameterHelp": true,
   "cljctools.mult.edn": "deathstar.lab:.vscode/mult.edn",
   "gopls": {
       "experimentalWorkspaceModule": true
