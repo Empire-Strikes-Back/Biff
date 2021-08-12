@@ -1,11 +1,11 @@
 #!/bin/bash
 
 cp_vscode_settings(){
-  cp -f ./source/delorean/settings.json ~/.config/Code/User/settings.json
+  cp -f ./src/delorean/settings.json ~/.config/Code/User/settings.json
 }
 
 cp_gitconfig(){
-  cp -f ./source/delorean/.gitconfig ~/.gitconfig
+  cp -f ./src/delorean/.gitconfig ~/.gitconfig
 }
 
 git_user(){
@@ -51,7 +51,7 @@ install_jdk(){
 }
 
 bashrc(){
-  cat ./source/delorean/.bashrc >> ~/.bashrc
+  cat ./src/delorean/.bashrc >> ~/.bashrc
 }
 
 "$@"
