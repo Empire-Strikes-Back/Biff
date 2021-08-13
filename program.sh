@@ -1,9 +1,5 @@
 #!/bin/bash
 
-cp_vscode_settings(){
-  cp -f ./src/delorean/settings.json ~/.config/Code/User/settings.json
-}
-
 cp_gitconfig(){
   cp -f ./src/delorean/.gitconfig ~/.gitconfig
 }
