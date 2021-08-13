@@ -1,0 +1,40 @@
+{
+  "workbench.colorTheme": "Default Light+",
+  "window.zoomLevel": -1,
+  "extensions.autoUpdate": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "extensions.ignoreRecommendations": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.exclude": {
+  "**/.git": false
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "explorer.autoReveal": false,
+  "workbench.sideBar.location": "left",
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "workbench.panel.defaultLocation": "bottom",
+  "files.autoSave": "off",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "git.autofetch": false,
+  "git.terminalAuthentication": false,
+  "explorer.openEditors.visible": 0,
+  "explorer.compactFolders": true,
+  "cljctools.mult.edn": "deathstar.lab:.vscode/mult.edn",
+  "gopls": {
+      "experimentalWorkspaceModule": true
+  },
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "search.exclude": {
+    "**/.git": true
+  }
+}
