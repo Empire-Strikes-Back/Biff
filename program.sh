@@ -1,11 +1,11 @@
 #!/bin/bash
 
 cp_vscode_settings(){
-  cp -f ./src/delorean/settings.json ~/.config/Code/User/settings.json
+  cp -f ./src/Biff/settings.json ~/.config/Code/User/settings.json
 }
 
 cp_gitconfig(){
-  cp -f ./src/delorean/.gitconfig ~/.gitconfig
+  cp -f ./src/Biff/.gitconfig ~/.gitconfig
 }
 
 git_user(){
@@ -51,7 +51,19 @@ install_jdk(){
 }
 
 bashrc(){
-  cat ./src/delorean/.bashrc >> ~/.bashrc
+  cat ./src/Biff/.bashrc >> ~/.bashrc
+}
+
+install_golang(){
+  FILENAME=go1.15.7.linux-amd64.tar.gz
+  wget https://go.dev/dl/$FILENAME -P ~/Downloads
+  mkdir -p ~/bin
+  tar -xvzf ~/Downloads/$FILENAME -C ~/bin
+  go version
+}
+
+install_qt(){
+  sudo apt-get install qt5-default
 }
 
 "$@"
