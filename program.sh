@@ -66,4 +66,16 @@ install_qt(){
   sudo apt-get install qt5-default
 }
 
+install_lein(){
+  wget https://raw.githubusercontent.com/technomancy/leiningen/2.9.5/bin/lein -P ~/Downloads
+  mkdir -p ~/bin
+  mv ~/Downloads/lein ~/bin
+  chmod a+x ~/bin/lein
+}
+
+install_nodejs(){
+  curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+}
+
 "$@"
