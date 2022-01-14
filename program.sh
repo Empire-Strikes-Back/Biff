@@ -86,4 +86,18 @@ install_mono(){
   sudo apt install -y mono-complete
 }
 
+install_scheme(){
+  # sudo apt-get install -y build-essential  uuid-dev libncurses5-dev libncursesw5-dev libx11-dev
+  # sudo apt-get install -y lsb-release build-essential libssl-dev python
+
+  # cd ~/bin && git clone https://github.com/cisco/ChezScheme
+
+  # cd ~/bin/ChezScheme && \
+  # git checkout 5aba39c40b46cee61a388d71ef4e5eebfa717108 && \
+  #   ./configure && \
+  #   sudo make install
+
+  sudo apt install chezscheme
+}
+
 "$@"
