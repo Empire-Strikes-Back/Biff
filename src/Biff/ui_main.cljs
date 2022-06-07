@@ -30,6 +30,7 @@
    ["antd/lib/input" :default AntdInput]
    ["antd/lib/table" :default AntdTable]
    ["antd/lib/tabs" :default AntdTabs]
+   ["antd/lib/space" :default AntdSpace]
 
    ["konva/lib/shapes/Rect"]
    ["konva" :default Konva]
@@ -61,10 +62,21 @@
         {:size "small"
          :style {:width "100%"
                  :height "80%"}
-         :rowKey :name
+         :rowKey :git-url
          :columns [{:title "git-url"
                     :dataIndex "git-url"
-                    :key "git-url"}]
+                    :key "git-url"}
+                   {:title "perform"
+                    :dataIndex "perform"
+                    :key "perform"
+                    :render (fn [_ record]
+                              ^{:key (aget record "name")}
+                              (reagent.core/as-element
+                               [:> AntdSpace
+                                {}
+                                [:> AntdButton "install"]
+                                [:> AntdButton "update"]
+                                [:> AntdButton "uninstall"]]))}]
          :dataSource [{:git-url "https://github.com/move-me-to-ipfs-shipyard/Cara-Dune"}
                       {:git-url "https://github.com/move-me-to-ipfs-shipyard/Tyrion"}
                       {:git-url "https://github.com/move-me-to-ipfs-shipyard/Dr-Pershing"}
