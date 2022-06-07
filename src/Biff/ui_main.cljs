@@ -75,6 +75,7 @@
                                [:> AntdSpace
                                 {}
                                 [:> AntdButton "install"]
+                                [:> AntdButton "run"]
                                 [:> AntdButton "update"]
                                 [:> AntdButton "uninstall"]]))}]
          :dataSource [{:git-url "https://github.com/move-me-to-ipfs-shipyard/Cara-Dune"}
