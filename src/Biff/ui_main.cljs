@@ -62,14 +62,18 @@
          :style {:width "100%"
                  :height "80%"}
          :rowKey :name
-         :columns [{:title "name"
-                    :dataIndex "name"
-                    :key "name"}
-                   {:title "git-url"
+         :columns [{:title "git-url"
                     :dataIndex "git-url"
                     :key "git-url"}]
-         :dataSource [{:name "Cara-Dune" :git-url "https://github.com/move-me-to-ipfs-shipyard/Cara-Dune"}
-                      {:name "Dr-Pershing" :git-url "https://github.com/move-me-to-ipfs-shipyard/Dr-Pershing"}]}]]]]))
+         :dataSource [{:git-url "https://github.com/move-me-to-ipfs-shipyard/Cara-Dune"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyard/Tyrion"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyard/Dr-Pershing"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyard/Beck"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyard/Vanth"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyard/Karga"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyard/Calican"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyardFennec"}
+                      {:git-url "https://github.com/move-me-to-ipfs-shipyard/Elsbeth"}]}]]]]))
 
 (defmulti op :op)
 
